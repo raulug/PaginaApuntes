@@ -251,7 +251,7 @@ aside ul a {
 }
 
 .toggle-btn {
-    z-index: 2;
+    z-index: 0;
     cursor: pointer;
     color: black;
     font-size: 24px;
