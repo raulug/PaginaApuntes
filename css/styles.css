@@ -251,15 +251,25 @@ aside ul a {
 }
 
 .toggle-btn {
-    z-index: 0;
     cursor: pointer;
     color: black;
+    transition: transform 0.7s ease;
+
+}
+
+.barra-btn {
+    z-index: 0;
     font-size: 24px;
     height: 100%;
     width: 1%;
     background-color: rgba(255, 255, 255, 70%);
     display: flex;
     align-items: center;
+}
+
+.toggle-btn.open {
+    transform: rotateY(180deg);
+    transition: transform 0.7s ease;
 }
 
 .contenedor_lenguajes.open {
@@ -269,5 +279,4 @@ aside ul a {
 
 .contenedor_lenguajes.open aside {
     width: 200px;
-    /* ajusta según sea necesario */
 }
