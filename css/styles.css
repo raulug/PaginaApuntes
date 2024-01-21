@@ -251,13 +251,15 @@ aside ul a {
 }
 
 .toggle-btn {
-    position: fixed;
-    top: 20px;
-    left: 20px;
     z-index: 2;
     cursor: pointer;
-    color: white;
+    color: black;
     font-size: 24px;
+    height: 100%;
+    width: 1%;
+    background-color: rgba(255, 255, 255, 70%);
+    display: flex;
+    align-items: center;
 }
 
 .contenedor_lenguajes.open {
