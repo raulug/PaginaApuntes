@@ -2,10 +2,12 @@ html,
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 main {
     overflow: hidden;
+    height: 100%;
 }
 
 main li:hover {
@@ -203,21 +205,67 @@ nav a {
 footer {
     background: linear-gradient(to top, black, rgba(0, 0, 0, 0%));
     height: 40px;
-    margin: 20px 0;
+    margin: 20px 0 0;
     color: white;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     bottom: 0;
+    position: fixed;
+    width: 100%;
 }
 
 .contenedorInicio {
     background: linear-gradient(to right, rgba(255, 255, 255, 50%), rgba(0, 0, 0, 0%));
-    height: 1080px;
+    height: 80%;
 }
 
-.caja-principal {
-    position: relative;
-    overflow: hidden;
+.contenedor_lenguajes {
+    display: flex;
+    height: 100vh;
+    transition: margin-left 0.3s;
+}
+
+aside {
+    background: linear-gradient(to right, rgb(92, 92, 92), rgba(255, 255, 255, 70%));
+    width: 0;
+    overflow-x: hidden;
+    transition: width 0.3s;
+}
+
+.contenedor_lenguajes main {
+    background-color: rgba(255, 255, 255, 70%);
+    width: 100%;
+    margin-right: 1%;
+    border-top-right-radius: 10px;
+}
+
+.contenedor_lenguajes section {
+    border-bottom: 1px solid black;
+}
+
+aside ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.toggle-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+}
+
+.contenedor_lenguajes.open {
+    margin-left: 0;
+    /* ajusta según sea necesario */
+}
+
+.contenedor_lenguajes.open aside {
+    width: 200px;
+    /* ajusta según sea necesario */
 }
