@@ -18,63 +18,102 @@
 		</nav>
 	</header>
     <div class="contenedor_lenguajes">
-        <aside>
-            <ul>
-                <li><a href="">Tema 1</a></li>
-                <ul>
-                    <li><a href="">Teoria</a></li>
-                    <li><a href="">Ejercicios</a></li>
-                </ul>
-                <li><a href="">Tema 2</a></li>
-                <ul>
-                    <li><a href="">Teoria</a></li>
-                    <li><a href="">Ejercicios</a></li>
-                </ul>
-                <li><a href="">Tema 3</a></li>
-                <ul>
-                    <li><a href="">Teoria</a></li>
-                    <li><a href="">Ejercicios</a></li>
-                </ul>
-                <li><a href="">Tema 4</a></li>
-                <ul>
-                    <li><a href="">Teoria</a></li>
-                    <li><a href="">Ejercicios</a></li>
-                </ul>
-                <li><a href="">Tema 5</a></li>
-                <ul>
-                    <li><a href="">Teoria</a></li>
-                    <li><a href="">Ejercicios</a></li>
-                </ul>
-                <li><a href="">Tema 6</a></li>
-                <ul>
-                    <li><a href="">Teoria</a></li>
-                    <li><a href="">Ejercicios</a></li>
-                </ul>
-                <li><a href="">Tema 7</a></li>
-                <ul>
-                    <li><a href="">Teoria</a></li>
-                    <li><a href="">Ejercicios</a></li>
-                </ul>
-                <li><a href="">Tema 8</a></li>
-                <ul>
-                    <li><a href="">Teoria</a></li>
-                    <li><a href="">Ejercicios</a></li>
-                </ul>
-            </ul>
-        </aside>
-        <div class="barra-btn" onclick="toggleSidebar()">
-            <i class="fa-solid fa-angle-right toggle-btn"></i>
-        </div>
-        <main>
-            <section>
-                <h3>Teoria</h3>
-            </section>
-        </main>
-    </div>
-        <footer>
+		<aside>
+			<ul>
+				<li class="contenedor-indice">
+                    <div onclick="toggleIndice(this)">
+                        <a href="#">Tema 1</a>
+                        <i class="fa-solid fa-angle-down indice-btn"></i>
+                    </div>
+					<ul class="indice"> 
+						<li><a href="#">Teoria</a></li>
+						<li><a href="#">Ejercicios</a></li>
+					</ul>
+				</li>
+				<li>
+                    <div onclick="toggleIndice(this)">
+                        <a href="#">Tema 2</a>
+                        <i class="fa-solid fa-angle-down indice-btn"></i>
+                    </div>
+					<ul class="indice"> 
+						<li><a href="#">Teoria</a></li>
+						<li><a href="#">Ejercicios</a></li>
+					</ul>
+				</li>
+				<li>
+                    <div onclick="toggleIndice(this)">
+                        <a href="#">Tema 3</a>
+                        <i class="fa-solid fa-angle-down indice-btn"></i>
+                    </div>
+                    <ul class="indice"> 
+						<li><a href="#">Teoria</a></li>
+						<li><a href="#">Ejercicios</a></li>
+					</ul>
+				</li>
+				<li>
+                    <div onclick="toggleIndice(this)">
+                        <a href="#">Tema 4</a>
+                        <i class="fa-solid fa-angle-down indice-btn"></i>
+                    </div>
+                    <ul class="indice"> 
+						<li><a href="#">Teoria</a></li>
+						<li><a href="#">Ejercicios</a></li>
+					</ul>
+				</li>
+				<li>
+                    <div onclick="toggleIndice(this)">
+                        <a href="#">Tema 5</a>
+                        <i class="fa-solid fa-angle-down indice-btn"></i>
+                    </div>
+                    <ul class="indice"> 
+						<li><a href="#">Teoria</a></li>
+						<li><a href="#">Ejercicios</a></li>
+					</ul>
+				</li>
+				<li>
+                    <div onclick="toggleIndice(this)">
+                        <a href="#">Tema 6</a>
+                        <i class="fa-solid fa-angle-down indice-btn"></i>
+                    </div>
+                    <ul class="indice"> 
+						<li><a href="#">Teoria</a></li>
+						<li><a href="#">Ejercicios</a></li>
+					</ul>
+				</li>
+				<li>
+                    <div onclick="toggleIndice(this)">
+                        <a href="#">Tema 7</a>
+                        <i class="fa-solid fa-angle-down indice-btn"></i>
+                    </div><ul class="indice"> 
+						<li><a href="#">Teoria</a></li>
+						<li><a href="#">Ejercicios</a></li>
+					</ul>
+				</li>
+				<li>
+                    <div onclick="toggleIndice(this)">
+                        <a href="#">Tema 8</a>
+                        <i class="fa-solid fa-angle-down indice-btn"></i>
+                    </div>
+                    <ul class="indice"> 
+						<li><a href="#">Teoria</a></li>
+						<li><a href="#">Ejercicios</a></li>
+					</ul>
+				</li>
+			</ul>
+		</aside>
+		<div class="barra-btn" onclick="toggleSidebar()">
+			<i class="fa-solid fa-angle-right toggle-btn"></i>
+		</div>
+		<main>
+			<section>
+				<h3>Teoria</h3>
+			</section>
+		</main>
+	</div>
+	<footer>
 		<p>© Carles Tur & Raul Lucena. Todos los derechos reservados.</p>
 	</footer>
-</body>
 
-<script src="script.js"></script>
+	<script src="script.js"></script>
+</body>
 </html>

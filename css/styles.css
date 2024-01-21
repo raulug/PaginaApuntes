@@ -254,7 +254,6 @@ aside ul a {
     cursor: pointer;
     color: black;
     transition: transform 0.7s ease;
-
 }
 
 .barra-btn {
@@ -274,9 +273,42 @@ aside ul a {
 
 .contenedor_lenguajes.open {
     margin-left: 0;
-    /* ajusta según sea necesario */
 }
 
 .contenedor_lenguajes.open aside {
     width: 200px;
+}
+
+.indice-btn {
+    cursor: pointer;
+    color: black;
+    transition: transform 0.7s ease;
+}
+
+.indice-btn.open {
+    transform: rotateX(180deg);
+    transition: transform 0.7s ease;
+}
+
+.indice {
+    list-style: none;
+    padding-left: 20px;
+    opacity: 0;
+    height: 0;
+    transition: opacity 0.01s ease, height 1s ease-out;
+}
+
+.indice.open {
+    opacity: 1;
+    height: auto;
+    transition: opacity 0.5s ease, height 1s ease-out;
+}
+
+.indice.open li {
+    padding: 5%;
+}
+
+aside ul {
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
