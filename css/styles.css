@@ -23,7 +23,7 @@ main i {
 
 main ul {
     list-style: none;
-    padding: 0;
+    padding: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     place-items: center;
@@ -61,18 +61,20 @@ main li i {
     margin-top: 20px;
 }
 
+h1,
 h2 {
     text-align: center;
 }
 
 .background {
     max-width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: -1;
+    width: 100%;
 }
 
 nav {
-    background-color: #242323;
+    background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0%));
     height: 100px;
     display: flex;
     justify-content: center;
@@ -94,8 +96,128 @@ nav a {
     height: 100%;
 }
 
+.lenguajeHtml:hover::before {
+    content: "Html";
+    display: block;
+    position: absolute;
+    background-color: #f9f9f9;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 400%);
+}
+
+.lenguajeCss:hover::before {
+    content: "Css";
+    display: block;
+    position: absolute;
+    background-color: #f9f9f9;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 400%);
+}
+
+.lenguajeJava:hover::before {
+    content: "Java";
+    display: block;
+    position: absolute;
+    background-color: #f9f9f9;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 400%);
+}
+
+.lenguajeJs:hover::before {
+    content: "JavaScript";
+    display: block;
+    position: absolute;
+    background-color: #f9f9f9;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 400%);
+}
+
+.lenguajeSql:hover::before {
+    content: "MySql";
+    display: block;
+    position: absolute;
+    background-color: #f9f9f9;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 400%);
+}
+
+.lenguajeGithub:hover::before {
+    content: "Github";
+    display: block;
+    position: absolute;
+    background-color: #f9f9f9;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 400%);
+}
+
+.lenguajePhp:hover::before {
+    content: "Php";
+    display: block;
+    position: absolute;
+    background-color: #f9f9f9;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 400%);
+}
+
+.lenguajePython:hover::before {
+    content: "Python";
+    display: block;
+    position: absolute;
+    background-color: #f9f9f9;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 400%);
+}
+
 footer {
-    background-color: black;
+    background: linear-gradient(to top, black, rgba(0, 0, 0, 0%));
     height: 40px;
-    margin: 0;
+    margin: 20px 0;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+}
+
+.contenedorInicio {
+    background: linear-gradient(to right, rgba(255, 255, 255, 50%), rgba(0, 0, 0, 0%));
+    height: 1080px;
+}
+
+.caja-principal {
+    position: relative;
+    overflow: hidden;
 }
