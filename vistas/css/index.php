@@ -2,21 +2,15 @@
 <html>
 <head>
 	<title>Programming Languages</title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-
-    <script src="https://kit.fontawesome.com/f03bcf4820.js" crossorigin="anonymous"></script>
+	<?php
+        include ("/common/head.php");
+?>
 </head>
 <body>
-	<img src="media/img/5590457.jpg" alt="imagen de fondo de web" class="background">
-	<header>
-		<nav>
-			<ul>
-				<li><a href="index.html">Inicio</a></li>
-				<li><a href="lenguajes.html">Lenguajes</a></li>
-				<li><a href="contacto.html">Contacto</a></li>
-			</ul>
-		</nav>
-	</header>
+	<img src="/media/img/5590457.jpg" alt="imagen de fondo de web" class="background">
+    <?php
+        include ("/common/menu.php");
+?>
     <div class="contenedor_lenguajes">
 		<aside>
 			<ul>

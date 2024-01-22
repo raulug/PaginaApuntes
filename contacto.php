@@ -1,22 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Programming Languages</title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+<title>Programming Languages</title>
+	<?php
+        include ("/common/head.php");
+?>
 
-    <script src="https://kit.fontawesome.com/f03bcf4820.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<img src="media/img/5590457.jpg" alt="imagen de fondo de web" class="background">
-	<header>
-		<nav>
-			<ul>
-				<li><a href="index.html">Inicio</a></li>
-				<li><a href="lenguajes.html">Lenguajes</a></li>
-				<li><a href="contacto.html">Contacto</a></li>
-			</ul>
-		</nav>
-	</header>
+	<img src="/media/img/5590457.jpg" alt="imagen de fondo de web" class="background">
+    <?php
+        include ("/common/menu.php");
+?>
 	<main class="contenedor">
 		<form action="post">
 			<fieldset>

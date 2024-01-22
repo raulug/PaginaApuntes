@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Programming Languages</title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+<title>Programming Languages</title>
+<?php
+        include ("/common/head.php");
+?>
 
-    <script src="https://kit.fontawesome.com/f03bcf4820.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<img src="media/img/5590457.jpg" alt="imagen de fondo de web" class="background">
-	<header>
-		<nav>
-			<ul>
-				<li><a href="index.html">Inicio</a></li>
-				<li><a href="lenguajes.html">Lenguajes</a></li>
-				<li><a href="contacto.html">Contacto</a></li>
-			</ul>
-		</nav>
-	</header>
+	<img src="/media/img/5590457.jpg" alt="imagen de fondo de web" class="background">
+    <?php
+        include ("/common/menu.php");
+?>
 	<main>
 		<div class="contenedor">
 				<h2>Lenguajes de programación</h2>
 				<ul>
-					<a href="html.html"><li class="lenguajeHtml" id="html"><i class="fa-brands fa-html5"></i></li></a>
+					<a href="vistas/html/index.php"><li class="lenguajeHtml" id="html"><i class="fa-brands fa-html5"></i></li></a>
 					<a href="css.html"><li class="lenguajeCss"><i class="fa-brands fa-css3-alt"></i></li></a>
 					<a href="java.html"><li class="lenguajeJava"><i class="fa-brands fa-java"></i></li></a>
 					<a href="js.html"><li class="lenguajeJs"><i class="fa-brands fa-js"></i></li></a>

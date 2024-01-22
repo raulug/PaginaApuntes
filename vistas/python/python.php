@@ -2,21 +2,15 @@
 <html>
 <head>
 	<title>Programming Languages</title>
-	<link rel="stylesheet" type="text/css" href="/css/styles.css">
-
-    <script src="https://kit.fontawesome.com/f03bcf4820.js" crossorigin="anonymous"></script>
+	<?php
+        include ("/common/head.php");
+?>
 </head>
 <body>
-	<img src="media/img/5590457.jpg" alt="imagen de fondo de web" class="background">
-	<header>
-		<nav>
-			<ul>
-				<li><a href="index.html">Inicio</a></li>
-				<li><a href="lenguajes.html">Lenguajes</a></li>
-				<li><a href="contacto.html">Contacto</a></li>
-			</ul>
-		</nav>
-	</header>
+	<img src="/media/img/5590457.jpg" alt="imagen de fondo de web" class="background">
+    <?php
+        include ("/common/menu.php");
+?>
     <div class="contenedor_lenguajes">
 		<aside>
 			<ul>
@@ -104,16 +98,16 @@
 		<div class="barra-btn" onclick="toggleSidebar()">
 			<i class="fa-solid fa-angle-right toggle-btn"></i>
 		</div>
-		<main>
-			<section>
-				<h3>Teoria</h3>
-			</section>
-		</main>
-	</div>
-	<footer>
+        <main>
+            <section>
+                <h3>Teoria</h3>
+            </section>
+        </main>
+    </div>
+        <footer>
 		<p>© Carles Tur & Raul Lucena. Todos los derechos reservados.</p>
 	</footer>
-
-	<script src="script.js"></script>
 </body>
+
+<script src="script.js"></script>
 </html>

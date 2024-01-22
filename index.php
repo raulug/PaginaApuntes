@@ -1,24 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php
+        include ("/common/head.php");
+?>
     <title>Apuntes Programación</title>
-
-    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <img src="media/img/5590457.jpg" alt="imagen de fondo de web" class="background">
-    <header>
-        <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="lenguajes.html">Lenguajes</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-        </nav>
-    </header>
+    <img src="/media/img/5590457.jpg" alt="imagen de fondo de web" class="background">
 
+    <?php
+        include ("/common/menu.php");
+?>
 	<main>
 		<div class="contenedor contenedorInicio">
 				<h1>Tu página para repasar tus lenguajes de programación preferidos.</h1>
