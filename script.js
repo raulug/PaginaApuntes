@@ -20,13 +20,10 @@ function toggleIndice(icon) {
         var indiceBtn = parentLi.querySelector('.indice-btn');
 
         // Cambia el icono según el estado de la lista
-        if (temaLista.classList.contains('open')) {
-            indiceBtn.classList.add('open');
-        } else {
-            indiceBtn.classList.remove('open');
-        }
+        indiceBtn.classList.toggle('open', temaLista.classList.contains('open'));
     }
 }
+
 
 
 
